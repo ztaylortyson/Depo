@@ -1,0 +1,17 @@
+<div id="<%= dom_id transcript %>">
+  <p>
+    <strong>Depo date:</strong>
+    <%= transcript.depo_date %>
+  </p>
+
+  <p>
+    <strong>Transcript name:</strong>
+    <%= transcript.transcript_name %>
+  </p>
+
+  <p>
+    <strong>File:</strong>
+    <%= link_to transcript.file.filename, transcript.file if transcript.file.attached? %>
+  </p>
+
+</div>

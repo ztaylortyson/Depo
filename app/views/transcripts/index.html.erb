@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Transcripts</h1>
+
+<div id="transcripts">
+  <% @transcripts.each do |transcript| %>
+    <%= render transcript %>
+    <p>
+      <%= link_to "Show this transcript", transcript %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New transcript", new_transcript_path %>
